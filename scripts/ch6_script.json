@@ -1,0 +1,93 @@
+{
+  "chapter": "ch6",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "intro": 1.0,
+  "tail": 4.6,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "wane",
+      "zh": "只是，即使越过了血肉的边界，也到不了永恒。",
+      "en": "Yet even past the bounds of flesh, there is no reaching eternity.",
+      "post": 1.1,
+      "minShot": 4.8
+    },
+    {
+      "id": "l2",
+      "shot": "rust",
+      "zh": "硅与金属同样会损坏，",
+      "en": "Silicon and metal break down too;",
+      "minShot": 3.4
+    },
+    {
+      "id": "l3",
+      "shot": "dyson",
+      "zh": "思想需要物质承载，文明需要能量维系。",
+      "en": "thought needs matter to carry it, and a civilization needs energy to sustain it.",
+      "para": true,
+      "minShot": 4.6
+    },
+    {
+      "id": "l4",
+      "shot": "ember",
+      "zh": "当岁月走向百万亿年，最后的恒星也将陆续耗尽燃料。",
+      "en": "As the ages run toward a hundred trillion years, the last stars too will burn through their fuel, one after another.",
+      "minShot": 5.0
+    },
+    {
+      "id": "l5",
+      "shot": "goout",
+      "zh": "群星一盏盏熄灭，远征却仍未结束。",
+      "en": "The stars go out one by one, and yet the voyage is not over.",
+      "post": 1.0,
+      "minShot": 4.6
+    },
+    {
+      "id": "l6",
+      "shot": "abyss",
+      "zh": "那些在星际辗转的心智，也许会在黑洞附近栖居：",
+      "en": "The minds that wander between the stars may come to dwell near black holes:",
+      "minShot": 4.6
+    },
+    {
+      "id": "l7",
+      "shot": "infall",
+      "zh": "坠落的物质被撕扯、加热，释放出光芒，",
+      "en": "infalling matter, torn apart and heated, gives off light,",
+      "minShot": 3.4
+    },
+    {
+      "id": "l7b",
+      "shot": "cities",
+      "zh": "照亮一座座悬在深渊边上的城市；",
+      "en": "lighting cities that hang at the edge of the abyss;",
+      "minShot": 3.8
+    },
+    {
+      "id": "l8",
+      "shot": "spin",
+      "zh": "黑洞尚未止息的自旋，像一根缓缓松开的发条，为思想与记忆供能。",
+      "en": "and the black hole's unspent spin, like a slowly unwinding spring, powers thought and memory.",
+      "para": true,
+      "minShot": 4.2
+    },
+    {
+      "id": "l9",
+      "shot": "starve",
+      "zh": "然而，可供吸积的物质会越来越少，",
+      "en": "But less and less matter will be left to fall in,"
+    },
+    {
+      "id": "l10",
+      "shot": "starve",
+      "zh": "发条也终有松尽之时。",
+      "en": "and the spring, too, will one day wind down."
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  }
+}

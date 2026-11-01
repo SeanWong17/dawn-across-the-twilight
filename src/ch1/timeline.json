@@ -1,0 +1,101 @@
+{
+  "chapter": "ch1",
+  "fps": 30,
+  "intro": 6.0,
+  "total": 31.299,
+  "frames": 939,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "earth",
+      "zh": "地球用了数十亿年，才迎来复杂生命的繁盛。",
+      "en": "It took the Earth billions of years to bring forth the flourishing of complex life.",
+      "start": 6.0,
+      "end": 9.634,
+      "dur": 3.634
+    },
+    {
+      "id": "l2",
+      "shot": "sea",
+      "zh": "从埃迪卡拉纪幽暗的浅海，",
+      "en": "From the dim, shallow seas of the Ediacaran,",
+      "start": 10.234,
+      "end": 12.454,
+      "dur": 2.22
+    },
+    {
+      "id": "l3",
+      "shot": "forest",
+      "zh": "到森林覆盖大陆、",
+      "en": "to forests cloaking the continents,",
+      "start": 13.234,
+      "end": 14.641,
+      "dur": 1.407
+    },
+    {
+      "id": "l4",
+      "shot": "beasts",
+      "zh": "巨兽踏过荒原，",
+      "en": "and great beasts striding across the wilds,",
+      "start": 16.234,
+      "end": 17.567,
+      "dur": 1.333
+    },
+    {
+      "id": "l5",
+      "shot": "stars",
+      "zh": "再到有人仰望星空，计算群星的年龄。",
+      "en": "and then to someone gazing up at the night sky, reckoning the ages of the stars.",
+      "start": 19.234,
+      "end": 22.542,
+      "dur": 3.308
+    },
+    {
+      "id": "l6",
+      "shot": "question",
+      "zh": "一颗行星上的物质，终于开始追问自己的来历。",
+      "en": "The matter of one planet has begun, at last, to ask where it came from.",
+      "start": 23.142,
+      "end": 26.799,
+      "dur": 3.657
+    }
+  ],
+  "cues": {
+    "sunrise": 0.6,
+    "title": 1.6,
+    "xfade": 0.6,
+    "stepPeriod": 1.9
+  },
+  "shots": [
+    {
+      "shot": "earth",
+      "start": 0.0,
+      "end": 9.884
+    },
+    {
+      "shot": "sea",
+      "start": 9.884,
+      "end": 12.884
+    },
+    {
+      "shot": "forest",
+      "start": 12.884,
+      "end": 15.884
+    },
+    {
+      "shot": "beasts",
+      "start": 15.884,
+      "end": 18.884
+    },
+    {
+      "shot": "stars",
+      "start": 18.884,
+      "end": 22.792
+    },
+    {
+      "shot": "question",
+      "start": 22.792,
+      "end": 31.299
+    }
+  ]
+}

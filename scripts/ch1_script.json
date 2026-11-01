@@ -1,0 +1,55 @@
+{
+  "chapter": "ch1",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "intro": 6.0,
+  "tail": 2.6,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "earth",
+      "zh": "地球用了数十亿年，才迎来复杂生命的繁盛。",
+      "en": "It took the Earth billions of years to bring forth the flourishing of complex life.",
+      "minShot": 4.0
+    },
+    {
+      "id": "l2",
+      "shot": "sea",
+      "zh": "从埃迪卡拉纪幽暗的浅海，",
+      "en": "From the dim, shallow seas of the Ediacaran,"
+    },
+    {
+      "id": "l3",
+      "shot": "forest",
+      "zh": "到森林覆盖大陆、",
+      "en": "to forests cloaking the continents,"
+    },
+    {
+      "id": "l4",
+      "shot": "beasts",
+      "zh": "巨兽踏过荒原，",
+      "en": "and great beasts striding across the wilds,"
+    },
+    {
+      "id": "l5",
+      "shot": "stars",
+      "zh": "再到有人仰望星空，计算群星的年龄。",
+      "en": "and then to someone gazing up at the night sky, reckoning the ages of the stars."
+    },
+    {
+      "id": "l6",
+      "shot": "question",
+      "zh": "一颗行星上的物质，终于开始追问自己的来历。",
+      "en": "The matter of one planet has begun, at last, to ask where it came from.",
+      "para": true
+    }
+  ],
+  "cues": {
+    "sunrise": 0.6,
+    "title": 1.6,
+    "xfade": 0.6,
+    "stepPeriod": 1.9
+  }
+}

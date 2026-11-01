@@ -1,0 +1,130 @@
+{
+  "chapter": "ch8",
+  "fps": 30,
+  "intro": 1.2,
+  "total": 50.337,
+  "frames": 1510,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "lineage",
+      "zh": "到了那时，这场始于地球浅海的远征，",
+      "en": "By then, this voyage that began in the shallow seas of Earth",
+      "start": 1.2,
+      "end": 4.728,
+      "dur": 3.528
+    },
+    {
+      "id": "l2",
+      "shot": "lineage",
+      "zh": "早已跨越无数代形体与心智。",
+      "en": "will long since have crossed countless generations of body and mind.",
+      "start": 5.008,
+      "end": 7.317,
+      "dur": 2.309
+    },
+    {
+      "id": "l3",
+      "shot": "first",
+      "zh": "最初出发的生命，无法想象最后的旅人；",
+      "en": "The first life to set out could never imagine the last traveler;",
+      "start": 8.517,
+      "end": 11.965,
+      "dur": 3.449
+    },
+    {
+      "id": "l4",
+      "shot": "last",
+      "zh": "最后的旅人，却仍可能记得出发的地方：",
+      "en": "yet the last traveler may still remember where it all began:",
+      "start": 12.385,
+      "end": 15.543,
+      "dur": 3.158
+    },
+    {
+      "id": "l4b",
+      "shot": "homedot",
+      "zh": "一颗蓝色的行星，",
+      "en": "a blue planet,",
+      "start": 16.185,
+      "end": 17.434,
+      "dur": 1.249
+    },
+    {
+      "id": "l4c",
+      "shot": "shallows",
+      "zh": "一片温暖的浅海，",
+      "en": "a warm, shallow sea,",
+      "start": 19.185,
+      "end": 20.553,
+      "dur": 1.368
+    },
+    {
+      "id": "l4d",
+      "shot": "stargazer",
+      "zh": "一个在寒夜里抬头望天的人。",
+      "en": "and someone who, on a cold night, looked up at the sky.",
+      "start": 22.185,
+      "end": 24.396,
+      "dur": 2.211
+    },
+    {
+      "id": "l7",
+      "shot": "dawn",
+      "zh": "在长夜合拢之前，",
+      "en": "Before the long night closed,",
+      "start": 26.296,
+      "end": 27.804,
+      "dur": 1.507
+    },
+    {
+      "id": "l8",
+      "shot": "dawn",
+      "zh": "我们曾把从一颗星球上诞生的黎明，带过了群星的黄昏。",
+      "en": "we carried the dawn born on a single planet across the twilight of the stars.",
+      "start": 28.254,
+      "end": 32.737,
+      "dur": 4.483
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  },
+  "shots": [
+    {
+      "shot": "lineage",
+      "start": 0.0,
+      "end": 8.167
+    },
+    {
+      "shot": "first",
+      "start": 8.167,
+      "end": 12.035
+    },
+    {
+      "shot": "last",
+      "start": 12.035,
+      "end": 15.835
+    },
+    {
+      "shot": "homedot",
+      "start": 15.835,
+      "end": 18.835
+    },
+    {
+      "shot": "shallows",
+      "start": 18.835,
+      "end": 21.835
+    },
+    {
+      "shot": "stargazer",
+      "start": 21.835,
+      "end": 25.946
+    },
+    {
+      "shot": "dawn",
+      "start": 25.946,
+      "end": 50.337
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "chapter": "ch4",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "intro": 1.0,
+  "tail": 3.4,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "vessels",
+      "zh": "而接过这项使命的，未必仍是血肉之躯。",
+      "en": "Yet those who take up this charge may no longer be of flesh and blood.",
+      "post": 1.1,
+      "minShot": 4.6
+    },
+    {
+      "id": "l2",
+      "shot": "lastforest",
+      "zh": "远在最后一片森林消逝之前，",
+      "en": "Long before the last forest fades,",
+      "minShot": 3.4
+    },
+    {
+      "id": "l3",
+      "shot": "swarm",
+      "zh": "人类创造的人工智能，或许便已能够独立探索、延续自身。",
+      "en": "the artificial minds humanity created may already explore, and carry themselves on, alone.",
+      "minShot": 4.6
+    },
+    {
+      "id": "l4",
+      "shot": "silicon",
+      "zh": "思想在硅与金属构成的躯体中生长，",
+      "en": "Thought will grow in bodies of silicon and metal,",
+      "minShot": 3.4
+    },
+    {
+      "id": "l5",
+      "shot": "memory",
+      "zh": "记忆跨越个体的损毁而保存。",
+      "en": "and memory will outlast the ruin of any single one.",
+      "minShot": 3.8
+    },
+    {
+      "id": "l6",
+      "shot": "voyage",
+      "zh": "漫长的星际航行，",
+      "en": "The long voyage between the stars"
+    },
+    {
+      "id": "l7",
+      "shot": "voyage",
+      "zh": "终于有了等得起的旅人。",
+      "en": "at last has travelers who can afford to wait.",
+      "para": true
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  }
+}

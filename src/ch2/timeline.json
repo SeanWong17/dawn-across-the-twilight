@@ -1,0 +1,166 @@
+{
+  "chapter": "ch2",
+  "fps": 30,
+  "intro": 1.6,
+  "total": 45.982,
+  "frames": 1379,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "future",
+      "zh": "可当我们把目光推向地球的未来，",
+      "en": "But when we turn our gaze toward the Earth's future,",
+      "start": 1.6,
+      "end": 4.034,
+      "dur": 2.434
+    },
+    {
+      "id": "l2",
+      "shot": "future",
+      "zh": "会看见一个冷峻的事实：",
+      "en": "we meet a stark truth:",
+      "start": 4.314,
+      "end": 5.974,
+      "dur": 1.66
+    },
+    {
+      "id": "l3",
+      "shot": "summer",
+      "zh": "故乡的白昼，并不漫长。",
+      "en": "the daylight of our home will not last long.",
+      "start": 6.354,
+      "end": 8.575,
+      "dur": 2.221
+    },
+    {
+      "id": "l4",
+      "shot": "sun",
+      "zh": "太阳会逐渐变亮，",
+      "en": "The Sun will slowly grow brighter,",
+      "start": 9.954,
+      "end": 11.253,
+      "dur": 1.299
+    },
+    {
+      "id": "l5",
+      "shot": "climate",
+      "zh": "气候与碳循环随之改变。",
+      "en": "and the climate and the carbon cycle will change with it.",
+      "start": 12.954,
+      "end": 15.42,
+      "dur": 2.465
+    },
+    {
+      "id": "l6",
+      "shot": "wither",
+      "zh": "森林将衰退，",
+      "en": "Forests will recede,",
+      "start": 16.02,
+      "end": 17.166,
+      "dur": 1.146
+    },
+    {
+      "id": "l7",
+      "shot": "evaporate",
+      "zh": "海洋终将蒸发。",
+      "en": "the oceans will at last boil away.",
+      "start": 19.02,
+      "end": 20.401,
+      "dur": 1.381
+    },
+    {
+      "id": "l9",
+      "shot": "timeline",
+      "zh": "倘若任由自然演进，",
+      "en": "Left to nature's course,",
+      "start": 22.02,
+      "end": 23.575,
+      "dur": 1.556
+    },
+    {
+      "id": "l10",
+      "shot": "timeline",
+      "zh": "地球复杂生命从兴起到落幕的繁盛岁月，或许只有十几亿年。",
+      "en": "the flourishing of complex life on Earth, from its rise to its fall, may span little more than a billion years.",
+      "start": 23.855,
+      "end": 29.569,
+      "dur": 5.714
+    },
+    {
+      "id": "l11",
+      "shot": "timeline",
+      "zh": "前面是漫长的等待，",
+      "en": "Before it, a long wait;",
+      "start": 30.169,
+      "end": 31.577,
+      "dur": 1.408
+    },
+    {
+      "id": "l12",
+      "shot": "timeline",
+      "zh": "后面是更漫长的沉寂。",
+      "en": "after it, a longer silence.",
+      "start": 32.077,
+      "end": 33.79,
+      "dur": 1.714
+    },
+    {
+      "id": "l13",
+      "shot": "timeline",
+      "zh": "中间这一场万物竞发，",
+      "en": "And this teeming burst of life between them,",
+      "start": 34.69,
+      "end": 36.512,
+      "dur": 1.822
+    },
+    {
+      "id": "l14",
+      "shot": "timeline",
+      "zh": "放在宇宙的尺度上，只是一个短暂的午后。",
+      "en": "set against the scale of the cosmos, is only a brief afternoon.",
+      "start": 37.412,
+      "end": 40.682,
+      "dur": 3.27
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  },
+  "shots": [
+    {
+      "shot": "future",
+      "start": 0.0,
+      "end": 6.004
+    },
+    {
+      "shot": "summer",
+      "start": 6.004,
+      "end": 9.604
+    },
+    {
+      "shot": "sun",
+      "start": 9.604,
+      "end": 12.604
+    },
+    {
+      "shot": "climate",
+      "start": 12.604,
+      "end": 15.67
+    },
+    {
+      "shot": "wither",
+      "start": 15.67,
+      "end": 18.67
+    },
+    {
+      "shot": "evaporate",
+      "start": 18.67,
+      "end": 21.67
+    },
+    {
+      "shot": "timeline",
+      "start": 21.67,
+      "end": 45.982
+    }
+  ]
+}

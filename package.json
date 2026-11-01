@@ -1,0 +1,21 @@
+{
+  "name": "dawn-across-the-twilight",
+  "version": "2.0.0",
+  "private": true,
+  "description": "把黎明带过群星的黄昏 · Dawn Across the Twilight of the Stars — a short film written entirely in code",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "render": "bash render.sh"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.536",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

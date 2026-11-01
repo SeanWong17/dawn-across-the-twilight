@@ -1,0 +1,73 @@
+{
+  "chapter": "ch7",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "intro": 1.4,
+  "tail": 5.0,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "edge",
+      "zh": "连深渊，也有尽头。",
+      "en": "Even the abyss has an end.",
+      "post": 1.6,
+      "minShot": 5.0
+    },
+    {
+      "id": "l2",
+      "shot": "hawking",
+      "zh": "在远比群星一生更漫长的岁月里，",
+      "en": "Over ages far longer than the lives of the stars,"
+    },
+    {
+      "id": "l3",
+      "shot": "hawking",
+      "zh": "黑洞也将以极其微弱的辐射，缓缓流失自身。",
+      "en": "the black holes too will slowly bleed themselves away in the faintest of radiation.",
+      "para": true
+    },
+    {
+      "id": "l4",
+      "shot": "wake",
+      "zh": "倘若还有旅人能够走到那样遥远的年代，",
+      "en": "If any traveler can still reach so distant an age,"
+    },
+    {
+      "id": "l5",
+      "shot": "wake",
+      "zh": "在日益稀薄的能量中，一次醒来、一场交谈，",
+      "en": "then in ever-thinner energy, a single waking, a single conversation,",
+      "post": 0.5
+    },
+    {
+      "id": "l6",
+      "shot": "wake",
+      "zh": "都可能隔着我们无法想象的岁月。",
+      "en": "may lie across spans of time we cannot imagine."
+    },
+    {
+      "id": "l6b",
+      "shot": "wake",
+      "zh": "它们放慢思考，像冬眠的动物那样，把每一点能量留给下一次睁眼。",
+      "en": "They slow their thinking, like animals in hibernation, saving every scrap of energy for the next time they open their eyes.",
+      "para": true
+    },
+    {
+      "id": "l7",
+      "shot": "vanish",
+      "zh": "而那些曾吞没星光的黑洞，",
+      "en": "And the black holes that once swallowed starlight"
+    },
+    {
+      "id": "l8",
+      "shot": "vanish",
+      "zh": "也终将一点点蒸发，归于消逝。",
+      "en": "will at last evaporate, bit by bit, and pass away."
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  }
+}

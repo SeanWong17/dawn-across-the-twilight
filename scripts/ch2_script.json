@@ -1,0 +1,98 @@
+{
+  "chapter": "ch2",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "intro": 1.6,
+  "tail": 3.4,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "future",
+      "zh": "可当我们把目光推向地球的未来，",
+      "en": "But when we turn our gaze toward the Earth's future,"
+    },
+    {
+      "id": "l2",
+      "shot": "future",
+      "zh": "会看见一个冷峻的事实：",
+      "en": "we meet a stark truth:"
+    },
+    {
+      "id": "l3",
+      "shot": "summer",
+      "zh": "故乡的白昼，并不漫长。",
+      "en": "the daylight of our home will not last long.",
+      "post": 0.9,
+      "minShot": 3.6
+    },
+    {
+      "id": "l4",
+      "shot": "sun",
+      "zh": "太阳会逐渐变亮，",
+      "en": "The Sun will slowly grow brighter,"
+    },
+    {
+      "id": "l5",
+      "shot": "climate",
+      "zh": "气候与碳循环随之改变。",
+      "en": "and the climate and the carbon cycle will change with it."
+    },
+    {
+      "id": "l6",
+      "shot": "wither",
+      "zh": "森林将衰退，",
+      "en": "Forests will recede,"
+    },
+    {
+      "id": "l7",
+      "shot": "evaporate",
+      "zh": "海洋终将蒸发。",
+      "en": "the oceans will at last boil away."
+    },
+    {
+      "id": "l9",
+      "shot": "timeline",
+      "zh": "倘若任由自然演进，",
+      "en": "Left to nature's course,"
+    },
+    {
+      "id": "l10",
+      "shot": "timeline",
+      "zh": "地球复杂生命从兴起到落幕的繁盛岁月，或许只有十几亿年。",
+      "en": "the flourishing of complex life on Earth, from its rise to its fall, may span little more than a billion years."
+    },
+    {
+      "id": "l11",
+      "shot": "timeline",
+      "zh": "前面是漫长的等待，",
+      "en": "Before it, a long wait;",
+      "post": 0.5
+    },
+    {
+      "id": "l12",
+      "shot": "timeline",
+      "zh": "后面是更漫长的沉寂。",
+      "en": "after it, a longer silence.",
+      "post": 0.9
+    },
+    {
+      "id": "l13",
+      "shot": "timeline",
+      "zh": "中间这一场万物竞发，",
+      "en": "And this teeming burst of life between them,",
+      "post": 0.9
+    },
+    {
+      "id": "l14",
+      "shot": "timeline",
+      "zh": "放在宇宙的尺度上，只是一个短暂的午后。",
+      "en": "set against the scale of the cosmos, is only a brief afternoon.",
+      "para": true
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "chapter": "ch8",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "intro": 1.2,
+  "tail": 17.0,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "lineage",
+      "zh": "到了那时，这场始于地球浅海的远征，",
+      "en": "By then, this voyage that began in the shallow seas of Earth"
+    },
+    {
+      "id": "l2",
+      "shot": "lineage",
+      "zh": "早已跨越无数代形体与心智。",
+      "en": "will long since have crossed countless generations of body and mind.",
+      "para": true,
+      "post": 1.2
+    },
+    {
+      "id": "l3",
+      "shot": "first",
+      "zh": "最初出发的生命，无法想象最后的旅人；",
+      "en": "The first life to set out could never imagine the last traveler;",
+      "minShot": 3.6
+    },
+    {
+      "id": "l4",
+      "shot": "last",
+      "zh": "最后的旅人，却仍可能记得出发的地方：",
+      "en": "yet the last traveler may still remember where it all began:",
+      "minShot": 3.8
+    },
+    {
+      "id": "l4b",
+      "shot": "homedot",
+      "zh": "一颗蓝色的行星，",
+      "en": "a blue planet,",
+      "minShot": 3.0
+    },
+    {
+      "id": "l4c",
+      "shot": "shallows",
+      "zh": "一片温暖的浅海，",
+      "en": "a warm, shallow sea,",
+      "minShot": 3.0
+    },
+    {
+      "id": "l4d",
+      "shot": "stargazer",
+      "zh": "一个在寒夜里抬头望天的人。",
+      "en": "and someone who, on a cold night, looked up at the sky.",
+      "minShot": 3.4,
+      "para": true
+    },
+    {
+      "id": "l7",
+      "shot": "dawn",
+      "zh": "在长夜合拢之前，",
+      "en": "Before the long night closed,",
+      "post": 0.45
+    },
+    {
+      "id": "l8",
+      "shot": "dawn",
+      "zh": "我们曾把从一颗星球上诞生的黎明，带过了群星的黄昏。",
+      "en": "we carried the dawn born on a single planet across the twilight of the stars."
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  }
+}

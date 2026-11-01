@@ -1,0 +1,148 @@
+{
+  "chapter": "ch3",
+  "fps": 30,
+  "intro": 1.4,
+  "total": 45.205,
+  "frames": 1356,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "understand",
+      "zh": "但生命已经开始理解，",
+      "en": "But life has begun to understand",
+      "start": 1.4,
+      "end": 3.109,
+      "dur": 1.709
+    },
+    {
+      "id": "l2",
+      "shot": "understand",
+      "zh": "那使它诞生、也将使它消亡的力量。",
+      "en": "the very force that gave it birth, and will one day bring its end.",
+      "start": 3.389,
+      "end": 6.166,
+      "dur": 2.777
+    },
+    {
+      "id": "l3",
+      "shot": "civilization",
+      "zh": "倘若文明能够延续到足够遥远的未来，",
+      "en": "If civilization can endure into a future distant enough,",
+      "start": 6.766,
+      "end": 9.566,
+      "dur": 2.8
+    },
+    {
+      "id": "l4",
+      "shot": "civilization",
+      "zh": "我们的后代也许会尝试改写故乡的命运：",
+      "en": "our descendants may try to rewrite the fate of their home:",
+      "start": 9.846,
+      "end": 12.862,
+      "dur": 3.016
+    },
+    {
+      "id": "l5",
+      "shot": "shield",
+      "zh": "在太阳与地球之间展开一面巨大的薄帆，挡住多余的阳光，",
+      "en": "unfurling a vast, thin sail between the Sun and the Earth to hold back the excess light,",
+      "start": 13.242,
+      "end": 18.231,
+      "dur": 4.989
+    },
+    {
+      "id": "l6",
+      "shot": "move",
+      "zh": "或借小行星一次次掠过的引力，把地球牵引到更温和的轨道。",
+      "en": "or using the pull of asteroids sweeping past again and again to tow the Earth to a gentler orbit.",
+      "start": 18.511,
+      "end": 23.82,
+      "dur": 5.309
+    },
+    {
+      "id": "l7",
+      "shot": "lifting",
+      "zh": "更大胆的设想，是在太阳步入晚年之前，",
+      "en": "Bolder still: before the Sun enters its old age,",
+      "start": 24.42,
+      "end": 27.94,
+      "dur": 3.52
+    },
+    {
+      "id": "l7b",
+      "shot": "lifting",
+      "zh": "从它身上一点点剥离物质，",
+      "en": "to strip its matter away, bit by bit,",
+      "start": 28.22,
+      "end": 30.472,
+      "dur": 2.252
+    },
+    {
+      "id": "l8",
+      "shot": "reddwarf",
+      "zh": "把它重铸成一颗燃烧更缓慢的红矮星，",
+      "en": "and recast it as a red dwarf that burns far more slowly,",
+      "start": 30.752,
+      "end": 34.206,
+      "dur": 3.454
+    },
+    {
+      "id": "l9",
+      "shot": "hope",
+      "zh": "为海洋、森林和无数尚未诞生的生命，",
+      "en": "to win, for the oceans, the forests, and countless lives not yet born,",
+      "start": 34.486,
+      "end": 38.215,
+      "dur": 3.729
+    },
+    {
+      "id": "l10",
+      "shot": "hope",
+      "zh": "争取千亿年的光阴。",
+      "en": "a hundred billion years of time.",
+      "start": 38.495,
+      "end": 40.105,
+      "dur": 1.609
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  },
+  "shots": [
+    {
+      "shot": "understand",
+      "start": 0.0,
+      "end": 6.416
+    },
+    {
+      "shot": "civilization",
+      "start": 6.416,
+      "end": 12.892
+    },
+    {
+      "shot": "shield",
+      "start": 12.892,
+      "end": 18.161
+    },
+    {
+      "shot": "move",
+      "start": 18.161,
+      "end": 24.07
+    },
+    {
+      "shot": "lifting",
+      "start": 24.07,
+      "end": 30.402
+    },
+    {
+      "shot": "reddwarf",
+      "start": 30.402,
+      "end": 34.136
+    },
+    {
+      "shot": "hope",
+      "start": 34.136,
+      "end": 45.205
+    }
+  ]
+}

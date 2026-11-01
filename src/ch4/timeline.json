@@ -1,0 +1,107 @@
+{
+  "chapter": "ch4",
+  "fps": 30,
+  "intro": 1.0,
+  "total": 30.923,
+  "frames": 928,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "vessels",
+      "zh": "而接过这项使命的，未必仍是血肉之躯。",
+      "en": "Yet those who take up this charge may no longer be of flesh and blood.",
+      "start": 1.0,
+      "end": 4.736,
+      "dur": 3.736
+    },
+    {
+      "id": "l2",
+      "shot": "lastforest",
+      "zh": "远在最后一片森林消逝之前，",
+      "en": "Long before the last forest fades,",
+      "start": 5.836,
+      "end": 8.016,
+      "dur": 2.18
+    },
+    {
+      "id": "l3",
+      "shot": "swarm",
+      "zh": "人类创造的人工智能，或许便已能够独立探索、延续自身。",
+      "en": "the artificial minds humanity created may already explore, and carry themselves on, alone.",
+      "start": 9.236,
+      "end": 14.379,
+      "dur": 5.143
+    },
+    {
+      "id": "l4",
+      "shot": "silicon",
+      "zh": "思想在硅与金属构成的躯体中生长，",
+      "en": "Thought will grow in bodies of silicon and metal,",
+      "start": 14.979,
+      "end": 18.175,
+      "dur": 3.195
+    },
+    {
+      "id": "l5",
+      "shot": "memory",
+      "zh": "记忆跨越个体的损毁而保存。",
+      "en": "and memory will outlast the ruin of any single one.",
+      "start": 18.455,
+      "end": 20.916,
+      "dur": 2.462
+    },
+    {
+      "id": "l6",
+      "shot": "voyage",
+      "zh": "漫长的星际航行，",
+      "en": "The long voyage between the stars",
+      "start": 22.255,
+      "end": 23.724,
+      "dur": 1.47
+    },
+    {
+      "id": "l7",
+      "shot": "voyage",
+      "zh": "终于有了等得起的旅人。",
+      "en": "at last has travelers who can afford to wait.",
+      "start": 24.004,
+      "end": 25.623,
+      "dur": 1.619
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  },
+  "shots": [
+    {
+      "shot": "vessels",
+      "start": 0.0,
+      "end": 5.486
+    },
+    {
+      "shot": "lastforest",
+      "start": 5.486,
+      "end": 8.886
+    },
+    {
+      "shot": "swarm",
+      "start": 8.886,
+      "end": 14.629
+    },
+    {
+      "shot": "silicon",
+      "start": 14.629,
+      "end": 18.105
+    },
+    {
+      "shot": "memory",
+      "start": 18.105,
+      "end": 21.905
+    },
+    {
+      "shot": "voyage",
+      "start": 21.905,
+      "end": 30.923
+    }
+  ]
+}

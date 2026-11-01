@@ -1,0 +1,163 @@
+{
+  "chapter": "ch6",
+  "fps": 30,
+  "intro": 1.0,
+  "total": 57.22,
+  "frames": 1717,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "wane",
+      "zh": "只是，即使越过了血肉的边界，也到不了永恒。",
+      "en": "Yet even past the bounds of flesh, there is no reaching eternity.",
+      "start": 1.0,
+      "end": 5.329,
+      "dur": 4.329
+    },
+    {
+      "id": "l2",
+      "shot": "rust",
+      "zh": "硅与金属同样会损坏，",
+      "en": "Silicon and metal break down too;",
+      "start": 6.429,
+      "end": 8.518,
+      "dur": 2.089
+    },
+    {
+      "id": "l3",
+      "shot": "dyson",
+      "zh": "思想需要物质承载，文明需要能量维系。",
+      "en": "thought needs matter to carry it, and a civilization needs energy to sustain it.",
+      "start": 9.829,
+      "end": 13.209,
+      "dur": 3.38
+    },
+    {
+      "id": "l4",
+      "shot": "ember",
+      "zh": "当岁月走向百万亿年，最后的恒星也将陆续耗尽燃料。",
+      "en": "As the ages run toward a hundred trillion years, the last stars too will burn through their fuel, one after another.",
+      "start": 15.109,
+      "end": 19.888,
+      "dur": 4.779
+    },
+    {
+      "id": "l5",
+      "shot": "goout",
+      "zh": "群星一盏盏熄灭，远征却仍未结束。",
+      "en": "The stars go out one by one, and yet the voyage is not over.",
+      "start": 20.488,
+      "end": 24.085,
+      "dur": 3.597
+    },
+    {
+      "id": "l6",
+      "shot": "abyss",
+      "zh": "那些在星际辗转的心智，也许会在黑洞附近栖居：",
+      "en": "The minds that wander between the stars may come to dwell near black holes:",
+      "start": 25.088,
+      "end": 29.222,
+      "dur": 4.134
+    },
+    {
+      "id": "l7",
+      "shot": "infall",
+      "zh": "坠落的物质被撕扯、加热，释放出光芒，",
+      "en": "infalling matter, torn apart and heated, gives off light,",
+      "start": 29.688,
+      "end": 34.051,
+      "dur": 4.363
+    },
+    {
+      "id": "l7b",
+      "shot": "cities",
+      "zh": "照亮一座座悬在深渊边上的城市；",
+      "en": "lighting cities that hang at the edge of the abyss;",
+      "start": 34.331,
+      "end": 36.962,
+      "dur": 2.632
+    },
+    {
+      "id": "l8",
+      "shot": "spin",
+      "zh": "黑洞尚未止息的自旋，像一根缓缓松开的发条，为思想与记忆供能。",
+      "en": "and the black hole's unspent spin, like a slowly unwinding spring, powers thought and memory.",
+      "start": 38.131,
+      "end": 44.134,
+      "dur": 6.003
+    },
+    {
+      "id": "l9",
+      "shot": "starve",
+      "zh": "然而，可供吸积的物质会越来越少，",
+      "en": "But less and less matter will be left to fall in,",
+      "start": 46.034,
+      "end": 49.586,
+      "dur": 3.553
+    },
+    {
+      "id": "l10",
+      "shot": "starve",
+      "zh": "发条也终有松尽之时。",
+      "en": "and the spring, too, will one day wind down.",
+      "start": 49.866,
+      "end": 52.02,
+      "dur": 2.154
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  },
+  "shots": [
+    {
+      "shot": "wane",
+      "start": 0.0,
+      "end": 6.079
+    },
+    {
+      "shot": "rust",
+      "start": 6.079,
+      "end": 9.479
+    },
+    {
+      "shot": "dyson",
+      "start": 9.479,
+      "end": 14.759
+    },
+    {
+      "shot": "ember",
+      "start": 14.759,
+      "end": 20.138
+    },
+    {
+      "shot": "goout",
+      "start": 20.138,
+      "end": 24.738
+    },
+    {
+      "shot": "abyss",
+      "start": 24.738,
+      "end": 29.338
+    },
+    {
+      "shot": "infall",
+      "start": 29.338,
+      "end": 33.981
+    },
+    {
+      "shot": "cities",
+      "start": 33.981,
+      "end": 37.781
+    },
+    {
+      "shot": "spin",
+      "start": 37.781,
+      "end": 45.684
+    },
+    {
+      "shot": "starve",
+      "start": 45.684,
+      "end": 57.22
+    }
+  ]
+}

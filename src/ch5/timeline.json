@@ -1,0 +1,130 @@
+{
+  "chapter": "ch5",
+  "fps": 30,
+  "intro": 1.0,
+  "total": 44.068,
+  "frames": 1322,
+  "lines": [
+    {
+      "id": "l1",
+      "shot": "handoff",
+      "zh": "我们将把语言、知识，以及尚未得到回答的问题，",
+      "en": "We will hand our language, our knowledge, and the questions still unanswered",
+      "start": 1.0,
+      "end": 5.41,
+      "dur": 4.41
+    },
+    {
+      "id": "l2",
+      "shot": "handoff",
+      "zh": "交给亲手创造的心智。",
+      "en": "to the minds we made with our own hands.",
+      "start": 5.69,
+      "end": 7.364,
+      "dur": 1.674
+    },
+    {
+      "id": "l3",
+      "shot": "homedot",
+      "zh": "它们是否仍会把地球称作故乡，我们无从知晓。",
+      "en": "Whether they will still call the Earth their home, we cannot know.",
+      "start": 8.364,
+      "end": 12.441,
+      "dur": 4.077
+    },
+    {
+      "id": "l4",
+      "shot": "dapple",
+      "zh": "但倘若它们仍愿意保存林间斑驳的阳光，",
+      "en": "But if they still choose to keep the dappled sunlight in the woods,",
+      "start": 13.641,
+      "end": 17.375,
+      "dur": 3.734
+    },
+    {
+      "id": "l5",
+      "shot": "whales",
+      "zh": "保存鲸群在深海中的歌唱，",
+      "en": "the song of whales in the deep sea,",
+      "start": 17.655,
+      "end": 19.731,
+      "dur": 2.075
+    },
+    {
+      "id": "l6",
+      "shot": "lastgaze",
+      "zh": "保存一个早已逝去的人望向星空时留下的疑问，",
+      "en": "the question left by someone long gone, who once looked up at the stars,",
+      "start": 21.455,
+      "end": 25.242,
+      "dur": 3.787
+    },
+    {
+      "id": "l7",
+      "shot": "thread",
+      "zh": "那么，这场远征便仍与我们相连。",
+      "en": "then this voyage is still bound to us.",
+      "start": 25.855,
+      "end": 29.134,
+      "dur": 3.279
+    },
+    {
+      "id": "l8",
+      "shot": "hands",
+      "zh": "它们或许还会记得，建造自己的双手，也曾在寒夜里颤抖，",
+      "en": "They may still remember that the hands that built them once trembled in the cold night,",
+      "start": 31.034,
+      "end": 35.843,
+      "dur": 4.809
+    },
+    {
+      "id": "l9",
+      "shot": "hands",
+      "zh": "却试图为遥远的后来者，多留下一点光。",
+      "en": "yet tried to leave a little more light for those who would come long after.",
+      "start": 36.123,
+      "end": 39.268,
+      "dur": 3.144
+    }
+  ],
+  "cues": {
+    "xfade": 0.6
+  },
+  "shots": [
+    {
+      "shot": "handoff",
+      "start": 0.0,
+      "end": 8.014
+    },
+    {
+      "shot": "homedot",
+      "start": 8.014,
+      "end": 13.291
+    },
+    {
+      "shot": "dapple",
+      "start": 13.291,
+      "end": 17.305
+    },
+    {
+      "shot": "whales",
+      "start": 17.305,
+      "end": 21.105
+    },
+    {
+      "shot": "lastgaze",
+      "start": 21.105,
+      "end": 25.505
+    },
+    {
+      "shot": "thread",
+      "start": 25.505,
+      "end": 30.684
+    },
+    {
+      "shot": "hands",
+      "start": 30.684,
+      "end": 44.068
+    }
+  ]
+}

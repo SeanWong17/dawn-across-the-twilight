@@ -1,0 +1,69 @@
+{
+  "fps": 30,
+  "frames": 9931,
+  "chapters": [
+    {
+      "chapter": "ch1",
+      "from": 0,
+      "frames": 901,
+      "dissolveIn": 0.0,
+      "joinedOut": true,
+      "next": 858
+    },
+    {
+      "chapter": "ch2",
+      "from": 858,
+      "frames": 1319,
+      "dissolveIn": 1.4,
+      "joinedOut": true,
+      "next": 1280
+    },
+    {
+      "chapter": "ch3",
+      "from": 2138,
+      "frames": 1302,
+      "dissolveIn": 1.25,
+      "joinedOut": true,
+      "next": 1275
+    },
+    {
+      "chapter": "ch4",
+      "from": 3413,
+      "frames": 868,
+      "dissolveIn": 0.85,
+      "joinedOut": true,
+      "next": 841
+    },
+    {
+      "chapter": "ch5",
+      "from": 4254,
+      "frames": 1322,
+      "dissolveIn": 0.85,
+      "joinedOut": false,
+      "next": 1298
+    },
+    {
+      "chapter": "ch6",
+      "from": 5552,
+      "frames": 1660,
+      "dissolveIn": 0.85,
+      "joinedOut": true,
+      "next": 1621
+    },
+    {
+      "chapter": "ch7",
+      "from": 7173,
+      "frames": 1252,
+      "dissolveIn": 1.25,
+      "joinedOut": false,
+      "next": 1248
+    },
+    {
+      "chapter": "ch8",
+      "from": 8421,
+      "frames": 1510,
+      "dissolveIn": 0.0,
+      "joinedOut": false
+    }
+  ]
+}
