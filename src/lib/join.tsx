@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from 'react';
 import { AbsoluteFill } from 'remotion';
+import { useOpts } from './lang';
 
 /**
  * How a chapter meets its neighbours. Standalone chapters (the Ch*-Music comps) open
@@ -28,5 +29,7 @@ export const useJoin = () => useContext(JoinCtx);
 /** A chapter's root: black, unless the picture is dissolving in over the previous chapter. */
 export const ChapterRoot: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { dissolveIn } = useJoin();
-  return <AbsoluteFill style={{ background: dissolveIn > 0 ? 'transparent' : '#000' }}>{children}</AbsoluteFill>;
+  const { textOnly } = useOpts();
+  // The text-only layer keeps its background transparent so it can be laid over a master.
+  return <AbsoluteFill style={{ background: dissolveIn > 0 || textOnly ? 'transparent' : '#000' }}>{children}</AbsoluteFill>;
 };

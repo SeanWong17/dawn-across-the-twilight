@@ -32,6 +32,13 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Ch8-Narration" component={Chapter8} durationInFrames={CH8_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: true }} />
     <Composition id="Full-Music" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: false }} />
     <Composition id="Full-Narration" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: true }} />
+    {/* International cut: English subtitles in the primary position, music only. */}
+    <Composition id="Full-Music-EN" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: false, lang: 'en' }} />
+    {/* Clean master: picture and score, no text; festival screenings and DVD/ProRes delivery. */}
+    <Composition id="Full-Clean" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: false, lang: 'none' }} />
+    {/* Text layer alone (alpha): laid over the clean master, a subtitle change costs seconds. */}
+    <Composition id="Text-EN" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: false, lang: 'en', textOnly: true }} />
+    <Composition id="Text-BI" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} defaultProps={{ narration: false, lang: 'bi', textOnly: true }} />
     <Composition id="ShotTest" component={ShotTest} durationInFrames={1} fps={30} width={1920} height={1080} defaultProps={{ shot: 'earth', from: 0 }} />
   </>
 );

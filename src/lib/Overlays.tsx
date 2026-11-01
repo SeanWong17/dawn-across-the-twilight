@@ -2,6 +2,7 @@ import React from 'react';
 import { useCurrentFrame, useVideoConfig } from 'remotion';
 import { MONO, SANS, SERIF } from './fonts';
 import { BAR, IMG_H } from './frame';
+import { useTextMode } from './lang';
 
 const clamp01 = (x: number) => Math.min(1, Math.max(0, x));
 const ease = (x: number) => {
@@ -18,9 +19,22 @@ const useSec = () => {
   return frame / fps;
 };
 
-const CREDITS: [string, string, string, string][] = [
-  ['影像 · 配乐 · 剪辑', 'FILM · SCORE · EDIT', 'Claude Opus 5.5', 'ANTHROPIC'],
-  ['文案', 'TEXT', '人与 AI 共同完成', 'WRITTEN BY A HUMAN AND AN AI TOGETHER'],
+// The text was written by the author; the AI partners came in afterwards, over many
+// rounds of revision. The credit says that, because a jury checks it against the film.
+// Each row states its value in both languages, so the two cuts rank the same way.
+type Credit = { labelZh: string; labelEn: string; valueZh: string; valueEn: string; subZh: string; subEn: string };
+
+const CREDITS: Credit[] = [
+  {
+    labelZh: '文案 · 导演', labelEn: 'TEXT · DIRECTION',
+    valueZh: '王硕', valueEn: 'Shuo Wang',
+    subZh: '修订：Claude、GPT、Gemini', subEn: 'REVISED WITH CLAUDE, GPT & GEMINI',
+  },
+  {
+    labelZh: '影像 · 配乐 · 剪辑', labelEn: 'FILM · SCORE · EDIT',
+    valueZh: 'Claude Opus 5.5', valueEn: 'Claude Opus 5.5',
+    subZh: 'ANTHROPIC', subEn: 'ANTHROPIC',
+  },
 ];
 
 /**
@@ -28,43 +42,55 @@ const CREDITS: [string, string, string, string][] = [
  * who made what. Each part resolves from blur in turn; all of it fades out together.
  */
 export const EndCard: React.FC<{ t0: number; t1: number }> = ({ t0, t1 }) => {
+  const mode = useTextMode();
   const s = useSec();
   const out = ease((t1 - s) / 1.4);
   if (s < t0 || out <= 0) return null;
+  const en = mode === 'en';
   const k = clamp01((s - t0) / (t1 - t0));
   const reveal = (at: number, len = 1.0) => ease((s - t0 - at) / len);
   const zh = '把黎明带过群星的黄昏';
   const rule = reveal(2.4, 1.4);
   return (
     <div style={{ position: 'absolute', left: 0, right: 0, top: BAR, height: IMG_H, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: out }}>
-      <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 400, fontSize: 52, color: '#F1ECE2', letterSpacing: `${0.3 + 0.05 * k}em`, textShadow: '0 0 36px rgba(255,220,180,0.18)' }}>
-        {zh.split('').map((c, i) => {
-          const a = reveal(i * 0.06, 0.9);
-          return (
-            <span key={i} style={{ opacity: a, filter: `blur(${(1 - a) * 8}px)`, display: 'inline-block' }}>
-              {c}
-            </span>
-          );
-        })}
-      </div>
-      <div style={{ marginTop: 18, fontFamily: SANS, fontSize: 15, color: 'rgba(225,218,206,0.6)', letterSpacing: `${0.46 + 0.08 * k}em`, opacity: reveal(1.1) }}>
-        DAWN ACROSS THE TWILIGHT OF THE STARS
+      {en ? (
+        // The international end card leads with the English title; the original sits under it.
+        <div style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 44, color: '#F1ECE2', letterSpacing: `${0.16 + 0.04 * k}em`, textShadow: '0 0 36px rgba(255,220,180,0.18)', opacity: reveal(0, 1.0) }}>
+          DAWN ACROSS THE TWILIGHT OF THE STARS
+        </div>
+      ) : (
+        <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 400, fontSize: 52, color: '#F1ECE2', letterSpacing: `${0.3 + 0.05 * k}em`, textShadow: '0 0 36px rgba(255,220,180,0.18)' }}>
+          {zh.split('').map((c, i) => {
+            const a = reveal(i * 0.06, 0.9);
+            return (
+              <span key={i} style={{ opacity: a, filter: `blur(${(1 - a) * 8}px)`, display: 'inline-block' }}>
+                {c}
+              </span>
+            );
+          })}
+        </div>
+      )}
+      <div style={{ marginTop: 18, fontFamily: en ? SERIF : SANS, fontSize: en ? 21 : 15, color: 'rgba(225,218,206,0.6)', letterSpacing: en ? '0.24em' : `${0.46 + 0.08 * k}em`, opacity: reveal(1.1) }}>
+        {en ? zh : 'DAWN ACROSS THE TWILIGHT OF THE STARS'}
       </div>
       <div style={{ marginTop: 54, marginBottom: 50, width: 240 * rule, height: 1, background: 'linear-gradient(90deg, transparent, rgba(230,222,210,0.45), transparent)' }} />
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 56px 1fr', rowGap: 34, width: 960 }}>
-        {CREDITS.map(([zhL, enL, zhV, enV], i) => {
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 56px 1fr', rowGap: 34, width: en ? 1240 : 960 }}>
+        {CREDITS.map((c, i) => {
           const a = reveal(3.0 + i * 0.9, 1.1);
           const style = { opacity: a, filter: `blur(${(1 - a) * 5}px)` };
+          // English leads in `en`; the Chinese line is kept as the author's own wording.
+          const label = en ? c.labelEn : c.labelZh;
+          const value = en ? c.valueEn : c.valueZh;
+          const sub = en ? c.subEn : c.subZh;
           return (
-            <React.Fragment key={zhL}>
+            <React.Fragment key={label}>
               <div style={{ ...style, textAlign: 'right' }}>
-                <div style={{ fontFamily: SERIF, fontSize: 21, color: 'rgba(225,218,206,0.62)', letterSpacing: '0.24em' }}>{zhL}</div>
-                <div style={{ fontFamily: SANS, fontSize: 12, color: 'rgba(210,204,194,0.42)', letterSpacing: '0.3em', marginTop: 8 }}>{enL}</div>
+                <div style={{ fontFamily: en ? SANS : SERIF, fontSize: en ? 15 : 21, color: 'rgba(225,218,206,0.62)', letterSpacing: '0.24em' }}>{label}</div>
               </div>
               <div style={{ ...style, justifySelf: 'center', width: 1, background: 'rgba(230,222,210,0.22)' }} />
               <div style={{ ...style, textAlign: 'left' }}>
-                <div style={{ fontFamily: SERIF, fontSize: 25, color: '#EEE9DF', letterSpacing: '0.12em' }}>{zhV}</div>
-                <div style={{ fontFamily: SANS, fontSize: 13, color: 'rgba(225,218,206,0.55)', letterSpacing: '0.2em', marginTop: 7 }}>{enV}</div>
+                <div style={{ fontFamily: SERIF, fontSize: en ? 20 : 25, color: '#EEE9DF', letterSpacing: '0.08em' }}>{value}</div>
+                <div style={{ fontFamily: SANS, fontSize: 12, color: 'rgba(225,218,206,0.42)', letterSpacing: '0.18em', marginTop: 7 }}>{sub}</div>
               </div>
             </React.Fragment>
           );
@@ -72,7 +98,9 @@ export const EndCard: React.FC<{ t0: number; t1: number }> = ({ t0, t1 }) => {
       </div>
       {/* The CJK faces are only in SERIF/SANS, so the code note is set in two fonts. */}
       <div style={{ marginTop: 64, display: 'flex', alignItems: 'baseline', gap: 18, opacity: reveal(5.0, 1.2) }}>
-        <span style={{ fontFamily: SANS, fontSize: 15, color: 'rgba(200,210,225,0.5)', letterSpacing: '0.2em' }}>每一帧画面、每一个音符，皆以代码生成</span>
+        <span style={{ fontFamily: SANS, fontSize: 15, color: 'rgba(200,210,225,0.5)', letterSpacing: '0.2em' }}>
+          {en ? 'EVERY FRAME AND EVERY NOTE, GENERATED IN CODE' : '每一帧画面、每一个音符，皆以代码生成'}
+        </span>
         <span style={{ fontFamily: MONO, fontSize: 13, color: 'rgba(160,190,220,0.45)', letterSpacing: '0.06em' }}>glsl · numpy · remotion</span>
       </div>
     </div>
@@ -107,15 +135,26 @@ export const Title: React.FC<{ t0: number; t1: number }> = ({ t0, t1 }) => {
 
 /** Era caption in the upper-left of the picture. */
 export const Era: React.FC<{ t0: number; t1: number; zh: React.ReactNode; en: React.ReactNode }> = ({ t0, t1, zh, en }) => {
+  const mode = useTextMode();
   const s = useSec();
   const a = window(s, t0, t1, 0.5, 0.45);
   if (a <= 0) return null;
+  const isEn = mode === 'en';
   return (
     <div style={{ position: 'absolute', left: 72, top: BAR + 50, opacity: a * 0.85, display: 'flex', alignItems: 'center', gap: 16 }}>
-      <div style={{ width: 2, height: 40, background: 'rgba(235,228,215,0.6)' }} />
+      <div style={{ width: 2, height: isEn ? 24 : 40, background: 'rgba(235,228,215,0.6)' }} />
       <div>
-        <div style={{ fontFamily: SERIF, fontSize: 21, color: '#E8E3DA', letterSpacing: '0.18em' }}>{zh}</div>
-        <div style={{ fontFamily: SANS, fontSize: 13, color: 'rgba(220,214,204,0.6)', letterSpacing: '0.22em', marginTop: 4 }}>{en}</div>
+        {isEn ? (
+          <>
+            <div style={{ fontFamily: SANS, fontSize: 17, color: '#E8E3DA', letterSpacing: '0.2em' }}>{en}</div>
+            <div style={{ fontFamily: SERIF, fontSize: 12, color: 'rgba(220,214,204,0.42)', letterSpacing: '0.2em', marginTop: 5 }}>{zh}</div>
+          </>
+        ) : (
+          <>
+            <div style={{ fontFamily: SERIF, fontSize: 21, color: '#E8E3DA', letterSpacing: '0.18em' }}>{zh}</div>
+            <div style={{ fontFamily: SANS, fontSize: 13, color: 'rgba(220,214,204,0.6)', letterSpacing: '0.22em', marginTop: 4 }}>{en}</div>
+          </>
+        )}
       </div>
     </div>
   );

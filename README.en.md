@@ -2,9 +2,9 @@
 
 [中文](README.md) | **English**
 
-A 5:31 short film adapted from the prose poem of the same name. Film, score and edit by Claude Opus 5.5; the text was written by a human and an AI together.
+A 5:31 short film adapted from the prose poem of the same name. The text was written by the author and revised with Claude, GPT and Gemini; the film, score and edit were made by Claude Opus 5.5 under the author's direction.
 
-The film uses no images or video footage. Every shot is a GLSL fragment shader running in real time, every note is synthesised with NumPy, and the narration comes from edge-tts. This repository is the film's complete source.
+The film uses no images or video footage. Every shot is a GLSL fragment shader, rendered frame by frame offline; every note is synthesised with NumPy, and the narration comes from edge-tts. This repository is the film's complete source.
 
 [![Dawn Across the Twilight of the Stars](docs/poster.jpg)](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)
 
@@ -65,6 +65,41 @@ Local renders go to `out/` (about 550 MB each, not tracked in git):
 
 - `dawn_across_the_twilight_music.mp4`: score with bilingual subtitles
 - `dawn_across_the_twilight_narration.mp4`: the same picture, with the score lowered under Chinese narration
+- `out/submission/full_en.mp4`: English subtitles in the primary position (the international cut)
+- `out/submission/full_clean.mp4`: picture and score, no subtitles (title and credits kept) — the clean master
+- `out/submission/text_{en,bi}.mov`: the text layer alone (ProRes 4444 with alpha), laid over the clean master
+
+### Three subtitle cuts from one composition
+
+Subtitles are not a separate track; they are burnt into every frame. Which text appears is
+chosen at render time, so one composition yields all three cuts:
+
+| Composition | Text | Use |
+|---|---|---|
+| `Full-Music` | Chinese primary, English beneath | Chinese-language venues, social media |
+| `Full-Music-EN` | English primary, Chinese small | International festivals (ZEBRA, SIGGRAPH, Ars Electronica) |
+| `Full-Clean` | none | Screening/archive delivery once selected |
+
+```bash
+npx remotion render Full-Music-EN out/submission/full_en.mp4 --gl=angle --concurrency=8 --codec=h264 --crf=18
+npx remotion render Full-Clean   out/submission/full_clean.mp4 --gl=angle --concurrency=8 --codec=h264 --crf=18
+```
+
+To revise subtitles without re-running a single shader, render only the text layer (seconds
+to minutes, not tens of minutes) and lay it over the clean master. `--pixel-format=yuva444p10le`
+is required, or the ProRes output has no alpha:
+
+```bash
+npx remotion render Text-EN out/submission/text_en.mov --gl=angle --codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --concurrency=8
+ffmpeg -i out/submission/full_clean.mp4 -i out/submission/text_en.mov -filter_complex overlay -c:a copy out_en.mp4
+```
+
+Sidecar subtitles are generated from the same timelines the picture reads, so they always
+match what is on screen:
+
+```bash
+python3 scripts/gen_subtitles.py out/submission   # SRT and VTT in Chinese, English, bilingual
+```
 
 ## Pipeline
 

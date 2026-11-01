@@ -2,9 +2,9 @@
 
 **中文** | [English](README.en.md)
 
-一部 5 分 31 秒的短片，改编自同名散文诗。影像、配乐、剪辑由 Claude Opus 5.5 完成，文案由人与 AI 共同完成。
+一部 5 分 31 秒的短片，改编自同名散文诗。文案由作者主笔，Claude、GPT、Gemini 参与多轮修订；影像、配乐、剪辑由 Claude Opus 5.5 在作者导演下完成。
 
-片中没有任何图片或视频素材：每一个镜头都是一段实时运行的 GLSL 片元着色器，每一个音符都由 NumPy 合成，旁白由 edge-tts 生成。这个仓库就是这部片子的全部源码。
+片中没有任何图片或视频素材：每一个镜头都是一段 GLSL 片元着色器，逐帧离线渲染；每一个音符都由 NumPy 合成，旁白由 edge-tts 生成。这个仓库就是这部片子的全部源码。
 
 [![把黎明带过群星的黄昏](docs/poster.jpg)](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)
 
@@ -13,6 +13,8 @@
 **[⬇ 下载成片（配乐 + 双语字幕，1080p，5:31，548 MB）](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)**
 
 成片以 GitHub Release 附件的形式提供（单个文件超过了仓库 100 MB 的限制），也可以在 [Releases](https://github.com/SeanWong17/dawn-across-the-twilight/releases) 页面查看。点击上方海报同样可以下载。
+
+> 归档期间仓库设为私有，上述链接只对协作者有效；对外提供预览请用 `docs/submission/screener.md` 里的方式。
 
 | | |
 |---|---|
@@ -63,6 +65,38 @@
 
 - `dawn_across_the_twilight_music.mp4`：配乐 + 双语字幕
 - `dawn_across_the_twilight_narration.mp4`：同一画面，配乐压低，叠加中文旁白
+- `out/submission/full_en.mp4`：英文主位字幕版（国际投递母版）
+- `out/submission/full_clean.mp4`：清洁母版，画面与配乐，无字幕（标题与片尾署名保留）
+- `out/submission/text_{en,bi}.mov`：文字层（ProRes 4444 带 alpha），叠在清洁母版上即得对应字幕版
+
+### 三个字幕版本
+
+字幕不是独立轨道，而是烧进每一帧的。所以片子的文字由 `--props` 决定，同一个合成可以出入三种文字：
+
+| 合成 | 文字 | 用途 |
+|---|---|---|
+| `Full-Music` | 中文主位 + 英译 | 中文场、社交媒体 |
+| `Full-Music-EN` | 英文主位 + 中文小字 | 国际影展（ZEBRA、SIGGRAPH、Ars Electronica） |
+| `Full-Clean` | 无 | 入围后放映交付 |
+
+```bash
+npx remotion render Full-Music-EN out/submission/full_en.mp4 --gl=angle --concurrency=8 --codec=h264 --crf=18
+npx remotion render Full-Clean   out/submission/full_clean.mp4 --gl=angle --concurrency=8 --codec=h264 --crf=18
+```
+
+改字幕却不想重跑着色器时，只渲染文字层（几百秒，不是几十分钟），再叠到清洁母版上。
+注意 `--pixel-format=yuva444p10le` 必须显式给，否则 ProRes 输出没有 alpha：
+
+```bash
+npx remotion render Text-EN out/submission/text_en.mov --gl=angle --codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --concurrency=8
+ffmpeg -i out/submission/full_clean.mp4 -i out/submission/text_en.mov -filter_complex overlay -c:a copy out_en.mp4
+```
+
+字幕侧文件由时间轴直接生成，与画面上的文字同源：
+
+```bash
+python3 scripts/gen_subtitles.py out/submission   # 生成中/英/双语 SRT、VTT
+```
 
 ## 管线
 
