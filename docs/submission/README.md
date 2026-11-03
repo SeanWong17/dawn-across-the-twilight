@@ -17,7 +17,7 @@
 | `technical-note.md` | 技术说明：着色器、合成、时间轴驱动、渲染方式 |
 | `ai-disclosure.md` | AI 参与说明，分"文本/AI 修订"和"影像/配乐/剪辑由 AI 完成"两层 |
 | `checklist.md` | 投递清单：每个影展要什么、现在缺什么、按什么顺序投 |
-| `screener.md` | 预览链接怎么给（私有仓库的 Release 链接对外打不开，见此处） |
+| `screener.md` | 预览链接怎么给 |
 
 ## 视频文件（`out/submission/`，不进 git）
 

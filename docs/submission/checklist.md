@@ -35,9 +35,9 @@
 
 ## 四、投递前必须完成的三件事
 
-- [ ] **`private-*.mov` / 预览链接**：私有仓库的 Release 链接对外是 404，评审打不开。见 `screener.md`。
-- [ ] **`full_clean.mp4` 与文字层**：已生成。入围后交付再转 ProRes/DCP，不必现在做。
-- [ ] **联系方式**：`ai-disclosure.md` 末尾的作者联系方式待填。
+- [ ] **预览链接**：仓库已公开，Release 链接可直接访问；需要私密预览时见 `screener.md`。
+- [x] **`full_clean.mp4`**：已生成。入围后交付再转 ProRes/DCP，不必现在做。
+- [x] **联系方式**：已填（王硕 · Shuo Wang）。
 
 ## 五、发布顺序
 

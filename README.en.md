@@ -10,7 +10,7 @@ The film uses no images or video footage. Every shot is a GLSL fragment shader, 
 
 ## Watch
 
-**[⬇ Download the film (score + bilingual subtitles, 1080p, 5:31, 548 MB)](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)**
+**[⬇ Download the film (score + bilingual subtitles, 1080p, 5:31, 547 MB)](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)**
 
 The film is attached to a GitHub Release, because the file is larger than the 100 MB limit for files in a repository. It is also listed on the [Releases](https://github.com/SeanWong17/dawn-across-the-twilight/releases) page. Clicking the poster above downloads it too.
 

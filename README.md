@@ -10,11 +10,9 @@
 
 ## 观看
 
-**[⬇ 下载成片（配乐 + 双语字幕，1080p，5:31，548 MB）](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)**
+**[⬇ 下载成片（配乐 + 双语字幕，1080p，5:31，547 MB）](https://github.com/SeanWong17/dawn-across-the-twilight/releases/download/v2.0/dawn_across_the_twilight_music.mp4)**
 
 成片以 GitHub Release 附件的形式提供（单个文件超过了仓库 100 MB 的限制），也可以在 [Releases](https://github.com/SeanWong17/dawn-across-the-twilight/releases) 页面查看。点击上方海报同样可以下载。
-
-> 归档期间仓库设为私有，上述链接只对协作者有效；对外提供预览请用 `docs/submission/screener.md` 里的方式。
 
 | | |
 |---|---|
